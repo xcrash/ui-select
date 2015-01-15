@@ -806,7 +806,7 @@
           }
 
           if (!contains) {
-            $select.close();
+            $select.close(e.target.tagName == "INPUT");
             scope.$digest();
           }
         }
