@@ -806,7 +806,7 @@
           }
 
           if (!contains) {
-            $select.close(e.target.tagName == "INPUT");
+            $select.close(e.target.tagName == "INPUT" || e.target.tagName == "TEXTAREA");
             scope.$digest();
           }
         }
